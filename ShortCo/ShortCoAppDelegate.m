@@ -199,7 +199,9 @@
 {
     NSString *shortUrl;
     ShortFetcher *fetcher = [[ShortFetcher alloc] init];
-    shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue]];
+    NSError *error = nil;
+    shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue] withError:&error];
+    NSLog(@"error %@", [error description]);
     NSLog(@"our new short url is %@", shortUrl);
     [_shortUrlTextField setStringValue:shortUrl];
     [_shortUrlTextField selectText:self];  // makes for easy copy/paste

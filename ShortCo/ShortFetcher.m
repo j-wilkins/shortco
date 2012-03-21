@@ -10,9 +10,22 @@
 
 @implementation ShortFetcher
 
-- (NSString *)fetchShortUrl:(NSString *)url
+- (NSString *)fetchShortUrl:(NSString *)urlString withError:(NSError **)outError
 {
-    NSLog(@"fetching %@", url);
+    NSLog(@"fetching %@", urlString);
+    NSURL *url = [NSURL URLWithString:@"http://shortener1.heroku.com/add.json"];
+    // TODO
+    // - make args json like below
+    //   {"shortener"=>"{\"url\":\"http://www.google.com\"}"}
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    [req setHTTPMethod:@"POST"];
+    NSHTTPURLResponse *resp = nil;
+    NSData *data = [NSURLConnection sendSynchronousRequest:req 
+                                         returningResponse:&resp
+                                                     error:outError];
+    NSLog(@"data %@ - resp %@", [data description], [resp description]);
+    NSLog(@"response code %ld", [resp statusCode]);
+    
     return @"http://www.gunandrabbit.com/";
 }
 

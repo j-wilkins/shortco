@@ -11,5 +11,5 @@
 @interface ShortFetcher : NSObject <NSXMLParserDelegate> {
     NSString *shortenedUrl;
 }
-- (NSString *)fetchShortUrl:(NSString *)url;
+- (NSString *)fetchShortUrl:(NSString *)url withError:(NSError **)outError;
 @end
