@@ -201,7 +201,7 @@
     ShortFetcher *fetcher = [[ShortFetcher alloc] init];
     shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue]];
     NSLog(@"our new short url is %@", shortUrl);
-    [_shortUrlTextField insertText:shortUrl];
+    [_shortUrlTextField setStringValue:shortUrl];
 }
 
 
