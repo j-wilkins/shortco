@@ -18,6 +18,7 @@
 
 - (IBAction)saveAction:(id)sender;
 - (IBAction)shortenURL:(id)sender;
+- (IBAction)openInBrowser:(id)sender;
 
 @property (weak) IBOutlet NSTextField *urlTextField;
 @property (weak) IBOutlet NSTextField *shortUrlTextField;

@@ -13,7 +13,7 @@
 - (NSString *)fetchShortUrl:(NSString *)url
 {
     NSLog(@"fetching %@", url);
-    return @"shorturl";
+    return @"http://www.gunandrabbit.com/";
 }
 
 @end

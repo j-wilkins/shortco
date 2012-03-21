@@ -202,6 +202,15 @@
     shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue]];
     NSLog(@"our new short url is %@", shortUrl);
     [_shortUrlTextField setStringValue:shortUrl];
+    [_shortUrlTextField selectText:self];  // makes for easy copy/paste
+}
+
+- (IBAction)openInBrowser:(id)sender 
+{
+    NSURL *url = [NSURL URLWithString:[_shortUrlTextField stringValue]];
+    NSLog(@"url %@", [url description]);
+    [[NSWorkspace sharedWorkspace] openURL:url];
+
 }
 
 
