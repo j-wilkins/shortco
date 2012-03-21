@@ -18,6 +18,7 @@
 		63DF42A8151966E5000EE40C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DF4285151966E5000EE40C /* Cocoa.framework */; };
 		63DF42B0151966E5000EE40C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63DF42AE151966E5000EE40C /* InfoPlist.strings */; };
 		63DF42B3151966E5000EE40C /* ShortCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF42B2151966E5000EE40C /* ShortCoTests.m */; };
+		63DF42C615197607000EE40C /* ShortFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF42C515197607000EE40C /* ShortFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,21 +37,23 @@
 		63DF4288151966E5000EE40C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		63DF4289151966E5000EE40C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		63DF428A151966E5000EE40C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		63DF428D151966E5000EE40C /* ShortCo-Info.plist */ = {isa = PBXFileReference; path = "ShortCo-Info.plist"; sourceTree = "<group>"; };
+		63DF428D151966E5000EE40C /* ShortCo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortCo-Info.plist"; sourceTree = "<group>"; };
 		63DF428F151966E5000EE40C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63DF4291151966E5000EE40C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63DF4293151966E5000EE40C /* ShortCo-Prefix.pch */ = {isa = PBXFileReference; path = "ShortCo-Prefix.pch"; sourceTree = "<group>"; };
+		63DF4293151966E5000EE40C /* ShortCo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShortCo-Prefix.pch"; sourceTree = "<group>"; };
 		63DF4295151966E5000EE40C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		63DF4297151966E5000EE40C /* ShortCoAppDelegate.h */ = {isa = PBXFileReference; path = ShortCoAppDelegate.h; sourceTree = "<group>"; };
+		63DF4297151966E5000EE40C /* ShortCoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCoAppDelegate.h; sourceTree = "<group>"; };
 		63DF4298151966E5000EE40C /* ShortCoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoAppDelegate.m; sourceTree = "<group>"; };
 		63DF429B151966E5000EE40C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		63DF429E151966E5000EE40C /* ShortCo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShortCo.xcdatamodel; sourceTree = "<group>"; };
 		63DF42A5151966E5000EE40C /* ShortCoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortCoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DF42A6151966E5000EE40C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		63DF42AD151966E5000EE40C /* ShortCoTests-Info.plist */ = {isa = PBXFileReference; path = "ShortCoTests-Info.plist"; sourceTree = "<group>"; };
+		63DF42AD151966E5000EE40C /* ShortCoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortCoTests-Info.plist"; sourceTree = "<group>"; };
 		63DF42AF151966E5000EE40C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		63DF42B1151966E5000EE40C /* ShortCoTests.h */ = {isa = PBXFileReference; path = ShortCoTests.h; sourceTree = "<group>"; };
+		63DF42B1151966E5000EE40C /* ShortCoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCoTests.h; sourceTree = "<group>"; };
 		63DF42B2151966E5000EE40C /* ShortCoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoTests.m; sourceTree = "<group>"; };
+		63DF42C415197607000EE40C /* ShortFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortFetcher.h; sourceTree = "<group>"; };
+		63DF42C515197607000EE40C /* ShortFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				63DF4297151966E5000EE40C /* ShortCoAppDelegate.h */,
 				63DF4298151966E5000EE40C /* ShortCoAppDelegate.m */,
+				63DF42C415197607000EE40C /* ShortFetcher.h */,
+				63DF42C515197607000EE40C /* ShortFetcher.m */,
 				63DF429A151966E5000EE40C /* MainMenu.xib */,
 				63DF429D151966E5000EE40C /* ShortCo.xcdatamodeld */,
 				63DF428C151966E5000EE40C /* Supporting Files */,
@@ -266,6 +271,7 @@
 				63DF4292151966E5000EE40C /* main.m in Sources */,
 				63DF4299151966E5000EE40C /* ShortCoAppDelegate.m in Sources */,
 				63DF429F151966E5000EE40C /* ShortCo.xcdatamodeld in Sources */,
+				63DF42C615197607000EE40C /* ShortFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

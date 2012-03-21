@@ -7,8 +7,11 @@
 //
 
 #import "ShortCoAppDelegate.h"
+#import "ShortFetcher.h"
 
 @implementation ShortCoAppDelegate
+@synthesize urlTextField = _urlTextField;
+@synthesize shortUrlTextField = _shortUrlTextField;
 
 @synthesize window = _window;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
@@ -189,5 +192,17 @@
 
     return NSTerminateNow;
 }
+
+#pragma mark short
+
+- (IBAction)shortenURL:(id)sender
+{
+    NSString *shortUrl;
+    ShortFetcher *fetcher = [[ShortFetcher alloc] init];
+    shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue]];
+    NSLog(@"our new short url is %@", shortUrl);
+    [_shortUrlTextField insertText:shortUrl];
+}
+
 
 @end

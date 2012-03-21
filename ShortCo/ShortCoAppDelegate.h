@@ -17,5 +17,9 @@
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)saveAction:(id)sender;
+- (IBAction)shortenURL:(id)sender;
+
+@property (weak) IBOutlet NSTextField *urlTextField;
+@property (weak) IBOutlet NSTextField *shortUrlTextField;
 
 @end
