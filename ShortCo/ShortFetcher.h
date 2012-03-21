@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class SBJsonParser;
+@class SBJsonWriter;
+
 @interface ShortFetcher : NSObject <NSXMLParserDelegate> {
     NSString *shortenedUrl;
+    SBJsonParser *_parser;
+    SBJsonWriter *_writer;
 }
 - (NSString *)fetchShortUrl:(NSString *)url withError:(NSError **)outError;
 @end
