@@ -26,8 +26,8 @@
     
     
     NSLog(@"fetching %@", urlString);
-    NSURL *url = [NSURL URLWithString:@"http://localhost:9292/add.json"];
-
+//    NSURL *url = [NSURL URLWithString:@"http://localhost:9292/add.json"];
+    NSURL *url = [NSURL URLWithString:@"http://shortener1.heroku.com/add.json"];
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
     [req setHTTPMethod:@"POST"];
     [req setHTTPBody:parmsData];
@@ -36,10 +36,14 @@
     NSData *data = [NSURLConnection sendSynchronousRequest:req 
                                          returningResponse:&resp
                                                      error:outError];
-
-    NSLog(@"response code %ld", [resp statusCode]);
-    
-    return @"http://www.gunandrabbit.com/";
+    NSDictionary *parsedDict = [_parser objectWithData:data];
+    NSLog(@"data [%@]", [parsedDict valueForKey:@"shortened"]);
+    NSLog(@"response code %ld", [resp statusCode ]);
+    if (parsedDict != nil) {
+        return [NSString stringWithFormat:@"http://shortener1.heroku.com/%@",
+                [parsedDict valueForKey:@"shortened"]];
+    }
+    return nil;
 }
 
 @end
