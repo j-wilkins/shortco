@@ -20,37 +20,24 @@
     // parmsDict = {"shortener" => {"url" => urlString}} in ruby...
     NSMutableDictionary *urlDict = [[NSMutableDictionary alloc] init];
     [urlDict setObject:urlString forKey:@"url"];
-    NSMutableDictionary *parmsDict = [[NSMutableDictionary alloc] init];
-    //[parmsDict setObject:urlDict forKey:@"shortener"];
-    //NSLog(@"parmsDict.shortener = %@", [parmsDict description]);
-    
-    
-    NSMutableData *parmsData = [[NSMutableData alloc] init];
-    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:parmsData];
-    [archiver encodeObject:parmsDict forKey:@"shortener"];
-    [archiver finishEncoding];
 
-    //= [_writer dataWithObject:parmsDict];
+    NSString *post = [NSString stringWithFormat:@"shortener=%@", [_writer stringWithObject:urlDict]];
+    NSData *parmsData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
     
-    NSLog(@"parmsData = %@", [parmsData description]);
     NSLog(@"fetching %@", urlString);
     NSURL *url = [NSURL URLWithString:@"http://localhost:9292/add.json"];
-    // TODO
-    // - make args json like below
-    //   {"shortener"=>"{\"url\":\"http://www.google.com\"}"}
+
     NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
     [req setHTTPMethod:@"POST"];
     [req setHTTPBody:parmsData];
-    NSLog(@"body is %@", [[req HTTPBody] description]);
     
     NSHTTPURLResponse *resp = nil;
     NSData *data = [NSURLConnection sendSynchronousRequest:req 
                                          returningResponse:&resp
                                                      error:outError];
-    //NSLog(@"data %@ - resp %@", [data description], [resp description]);
+
     NSLog(@"response code %ld", [resp statusCode]);
-    //NSLog(@"response body %@", [resp )
     
     return @"http://www.gunandrabbit.com/";
 }
