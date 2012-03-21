@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63C73AD3151A7212009D240B /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 63C73ACA151A71BE009D240B /* SBJson.framework */; };
 		63DF4286151966E5000EE40C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DF4285151966E5000EE40C /* Cocoa.framework */; };
 		63DF4290151966E5000EE40C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63DF428E151966E5000EE40C /* InfoPlist.strings */; };
 		63DF4292151966E5000EE40C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DF4291151966E5000EE40C /* main.m */; };
@@ -22,6 +23,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		63C73AC7151A71BE009D240B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC1232521391D5CC00131607;
+			remoteInfo = SBJsonTests;
+		};
+		63C73AC9151A71BE009D240B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC12323D1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
+		63C73ACB151A71BE009D240B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2626913920FC7003D9994;
+			remoteInfo = "sbjson-ios";
+		};
+		63C73ACD151A71BE009D240B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BCC2627313920FC7003D9994;
+			remoteInfo = "sbjson-iosTests";
+		};
+		63C73AD0151A71F3009D240B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC12323C1391D5CC00131607;
+			remoteInfo = SBJson;
+		};
 		63DF42A9151966E5000EE40C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63DF4278151966E5000EE40C /* Project object */;
@@ -31,7 +67,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		63C73AD2151A71FC009D240B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				63C73AD3151A7212009D240B /* SBJson.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		63C73ABD151A71BD009D240B /* SBJson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SBJson.xcodeproj; path = "../json-framework/SBJson.xcodeproj"; sourceTree = "<group>"; };
 		63DF4281151966E5000EE40C /* ShortCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DF4285151966E5000EE40C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		63DF4288151966E5000EE40C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -77,6 +127,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63C73ABE151A71BD009D240B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C73AC8151A71BE009D240B /* SBJsonTests.octest */,
+				63C73ACA151A71BE009D240B /* SBJson.framework */,
+				63C73ACC151A71BE009D240B /* libsbjson-ios.a */,
+				63C73ACE151A71BE009D240B /* sbjson-iosTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		63DF4276151966E5000EE40C = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +160,7 @@
 		63DF4284151966E5000EE40C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63C73ABD151A71BD009D240B /* SBJson.xcodeproj */,
 				63DF4285151966E5000EE40C /* Cocoa.framework */,
 				63DF42A6151966E5000EE40C /* SenTestingKit.framework */,
 				63DF4287151966E5000EE40C /* Other Frameworks */,
@@ -171,10 +233,12 @@
 				63DF427D151966E5000EE40C /* Sources */,
 				63DF427E151966E5000EE40C /* Frameworks */,
 				63DF427F151966E5000EE40C /* Resources */,
+				63C73AD2151A71FC009D240B /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				63C73AD1151A71F3009D240B /* PBXTargetDependency */,
 			);
 			name = ShortCo;
 			productName = ShortCo;
@@ -218,6 +282,12 @@
 			mainGroup = 63DF4276151966E5000EE40C;
 			productRefGroup = 63DF4282151966E5000EE40C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 63C73ABE151A71BD009D240B /* Products */;
+					ProjectRef = 63C73ABD151A71BD009D240B /* SBJson.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				63DF4280151966E5000EE40C /* ShortCo */,
@@ -225,6 +295,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		63C73AC8151A71BE009D240B /* SBJsonTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SBJsonTests.octest;
+			remoteRef = 63C73AC7151A71BE009D240B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C73ACA151A71BE009D240B /* SBJson.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SBJson.framework;
+			remoteRef = 63C73AC9151A71BE009D240B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C73ACC151A71BE009D240B /* libsbjson-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libsbjson-ios.a";
+			remoteRef = 63C73ACB151A71BE009D240B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		63C73ACE151A71BE009D240B /* sbjson-iosTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "sbjson-iosTests.octest";
+			remoteRef = 63C73ACD151A71BE009D240B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		63DF427F151966E5000EE40C /* Resources */ = {
@@ -286,6 +387,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		63C73AD1151A71F3009D240B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SBJson;
+			targetProxy = 63C73AD0151A71F3009D240B /* PBXContainerItemProxy */;
+		};
 		63DF42AA151966E5000EE40C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 63DF4280151966E5000EE40C /* ShortCo */;
@@ -445,6 +551,7 @@
 				63DF42B8151966E5000EE40C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63DF42B9151966E5000EE40C /* Build configuration list for PBXNativeTarget "ShortCoTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +560,7 @@
 				63DF42BB151966E5000EE40C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

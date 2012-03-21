@@ -7,6 +7,7 @@
 //
 
 #import "ShortFetcher.h"
+#import "SBJson/SBJson.h"
 
 @implementation ShortFetcher
 
