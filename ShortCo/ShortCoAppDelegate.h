@@ -25,6 +25,5 @@
 
 @property (weak) IBOutlet NSTextField *urlTextField;
 @property (weak) IBOutlet NSTextField *shortUrlTextField;
-@property (nonatomic, retain) IBOutlet WebView *webView;
 
 @end
