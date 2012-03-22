@@ -7,8 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
-@interface ShortCoAppDelegate : NSObject <NSApplicationDelegate>
+@interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
+    IBOutlet WebView *webview;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 
@@ -22,5 +25,6 @@
 
 @property (weak) IBOutlet NSTextField *urlTextField;
 @property (weak) IBOutlet NSTextField *shortUrlTextField;
+@property (nonatomic, retain) IBOutlet WebView *webView;
 
 @end

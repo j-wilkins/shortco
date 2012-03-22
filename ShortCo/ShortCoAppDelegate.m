@@ -12,6 +12,7 @@
 @implementation ShortCoAppDelegate
 @synthesize urlTextField = _urlTextField;
 @synthesize shortUrlTextField = _shortUrlTextField;
+@synthesize webView = _webView;
 
 @synthesize window = _window;
 @synthesize persistentStoreCoordinator = __persistentStoreCoordinator;
@@ -210,9 +211,20 @@
 - (IBAction)openInBrowser:(id)sender 
 {
     NSURL *url = [NSURL URLWithString:[_shortUrlTextField stringValue]];
+    if ([_shortUrlTextField stringValue] == nil) {
+        NSRunAlertPanel(@"eek", @"no url to open", @"OK", nil, nil);
+    }
     NSLog(@"url %@", [url description]);
-    [[NSWorkspace sharedWorkspace] openURL:url];
-
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [[_webView mainFrame] loadRequest:requestObj];
+    
+    
+    //    [[NSWorkspace sharedWorkspace] openURL:url];
+    //    [[webview mainFrame]loadHTMLString:@"<html><body style='padding:0;margin:0'><img src='http://www.thinkandbuild.it/wp-content/themes/thinkandbuild2/img/title.png' /></body></html>" baseURL:nil];
+    //    [[webview mainFrame]loadHTMLString:url baseURL:nil];
+    //    [[webview mainFrame] loadHTMLString:[_shortUrlTextField stringValue] baseURL:nil];
+    //    [[webview mainFrame] loadHTMLString:nil baseURL:url];
+    //    [_webView setMainFrameURL:[_shortUrlTextField stringValue]];
 }
 
 
