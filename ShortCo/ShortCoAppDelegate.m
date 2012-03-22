@@ -21,6 +21,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+    fetcher = [[ShortFetcher alloc] init];
 }
 
 /**
@@ -198,7 +199,7 @@
 - (IBAction)shortenURL:(id)sender
 {
     NSString *shortUrl;
-    ShortFetcher *fetcher = [[ShortFetcher alloc] init];
+
     NSError *error = nil;
     shortUrl = [fetcher fetchShortUrl:[_urlTextField stringValue] withError:&error];
     NSLog(@"error %@", [error description]);

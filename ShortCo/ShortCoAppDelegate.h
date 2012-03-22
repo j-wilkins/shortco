@@ -7,8 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ShortFetcher.h"
 
-@interface ShortCoAppDelegate : NSObject <NSApplicationDelegate>
+@interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
+    ShortFetcher *fetcher;
+}
 
 @property (assign) IBOutlet NSWindow *window;
 

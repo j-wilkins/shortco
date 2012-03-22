@@ -11,10 +11,31 @@
 
 @implementation ShortFetcher
 
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        NSMutableDictionary *urlMappings = [[NSMutableDictionary alloc] init];
+        [urlMappings setObject:@"add.json" forKey:@"ADD"];
+        [urlMappings setObject:@"delete.json" forKey:@"DELETE"];
+        
+        _parser = [[SBJsonParser alloc] init];
+        _writer = [[SBJsonWriter alloc] init];
+        
+        configuration = [[NSMutableDictionary alloc] init];
+        [configuration setObject:urlMappings forKey:@"URL_MAPPINGS"];
+        [configuration setObject:@"http://j-b.us" forKey:@"SHORTENER_URL"];
+        
+        NSLog(@"CONFIGURING:: set URL_MAPPINGS[ADD]: %@", 
+              [[configuration objectForKey:@"URL_MAPPINGS"] objectForKey:@"ADD"]);
+        NSLog(@"CONFIGURING:: set SHORTENER_URL: %@", 
+              [configuration objectForKey:@"SHORTENER_URL"]);
+    }
+    return self;
+}
+
 - (NSString *)fetchShortUrl:(NSString *)urlString withError:(NSError **)outError
 {
-
-    [self defineConfigurations];
     
     NSData *parmsData = [self generatePostParamsForUrl:urlString];
     
@@ -85,6 +106,11 @@
     returnData = [NSURLConnection sendSynchronousRequest:req 
                                        returningResponse:&resp
                                                    error:outError];
+    if ([resp statusCode] != 200) {
+        NSLog(@"shortening not successful. Error Code %ld", [resp statusCode]);
+        return nil;
+    }
+    
     return returnData;
 }
 
@@ -106,22 +132,5 @@
     return resultString;
 }
 
-- (void)defineConfigurations
-{
-    NSMutableDictionary *urlMappings = [[NSMutableDictionary alloc] init];
-    [urlMappings setObject:@"add.json" forKey:@"ADD"];
-    [urlMappings setObject:@"delete.json" forKey:@"DELETE"];
-    
-    _parser = [[SBJsonParser alloc] init];
-    _writer = [[SBJsonWriter alloc] init];
-    
-    configuration = [[NSMutableDictionary alloc] init];
-    [configuration setObject:urlMappings forKey:@"URL_MAPPINGS"];
-    [configuration setObject:@"http://j-b.us" forKey:@"SHORTENER_URL"];
-    
-    NSLog(@"CONFIGURING:: set URL_MAPPINGS[ADD]: %@", [[configuration objectForKey:@"URL_MAPPINGS"] objectForKey:@"ADD"]);
-    NSLog(@"CONFIGURING:: set SHORTENER_URL: %@", [configuration objectForKey:@"SHORTENER_URL"]);
-    
-}
 
 @end

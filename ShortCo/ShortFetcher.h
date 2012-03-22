@@ -37,7 +37,4 @@
 - (NSString *)generateResultURLString:(NSString *)shortened;
 
 
-
-- (void)defineConfigurations;
-
 @end
