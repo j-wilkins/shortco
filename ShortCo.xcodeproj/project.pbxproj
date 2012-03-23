@@ -17,6 +17,7 @@
 		633BDFA5151D008900351312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDF85151D008200351312 /* Cocoa.framework */; };
 		633BDFAD151D008900351312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633BDFAB151D008900351312 /* InfoPlist.strings */; };
 		633BDFB0151D008900351312 /* ShortCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDFAF151D008900351312 /* ShortCoTests.m */; };
+		633BDFC3151D04BE00351312 /* ShortFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDFC2151D04BE00351312 /* ShortFetcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		633BDFAC151D008900351312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		633BDFAE151D008900351312 /* ShortCoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCoTests.h; sourceTree = "<group>"; };
 		633BDFAF151D008900351312 /* ShortCoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoTests.m; sourceTree = "<group>"; };
+		633BDFC1151D04BE00351312 /* ShortFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortFetcher.h; sourceTree = "<group>"; };
+		633BDFC2151D04BE00351312 /* ShortFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortFetcher.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				633BDF97151D008900351312 /* ShortCoAppDelegate.h */,
 				633BDF98151D008900351312 /* ShortCoAppDelegate.m */,
 				633BDF9A151D008900351312 /* MainMenu.xib */,
+				633BDFC1151D04BE00351312 /* ShortFetcher.h */,
+				633BDFC2151D04BE00351312 /* ShortFetcher.m */,
 				633BDF8C151D008900351312 /* Supporting Files */,
 			);
 			path = ShortCo;
@@ -262,6 +267,7 @@
 			files = (
 				633BDF92151D008900351312 /* main.m in Sources */,
 				633BDF99151D008900351312 /* ShortCoAppDelegate.m in Sources */,
+				633BDFC3151D04BE00351312 /* ShortFetcher.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +441,7 @@
 				633BDFB5151D008900351312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		633BDFB6151D008900351312 /* Build configuration list for PBXNativeTarget "ShortCoTests" */ = {
 			isa = XCConfigurationList;
@@ -443,6 +450,7 @@
 				633BDFB8151D008900351312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
