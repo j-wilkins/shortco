@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		633BDF86151D008200351312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDF85151D008200351312 /* Cocoa.framework */; };
+		633BDF90151D008900351312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633BDF8E151D008900351312 /* InfoPlist.strings */; };
+		633BDF92151D008900351312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDF91151D008900351312 /* main.m */; };
+		633BDF96151D008900351312 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 633BDF94151D008900351312 /* Credits.rtf */; };
+		633BDF99151D008900351312 /* ShortCoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDF98151D008900351312 /* ShortCoAppDelegate.m */; };
+		633BDF9C151D008900351312 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633BDF9A151D008900351312 /* MainMenu.xib */; };
+		633BDFA4151D008900351312 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDFA3151D008900351312 /* SenTestingKit.framework */; };
+		633BDFA5151D008900351312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDF85151D008200351312 /* Cocoa.framework */; };
+		633BDFAD151D008900351312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633BDFAB151D008900351312 /* InfoPlist.strings */; };
+		633BDFB0151D008900351312 /* ShortCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDFAF151D008900351312 /* ShortCoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		633BDFA6151D008900351312 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 633BDF78151D008200351312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 633BDF80151D008200351312;
+			remoteInfo = ShortCo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		633BDF81151D008200351312 /* ShortCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		633BDF85151D008200351312 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		633BDF88151D008200351312 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		633BDF89151D008200351312 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		633BDF8A151D008200351312 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		633BDF8D151D008900351312 /* ShortCo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortCo-Info.plist"; sourceTree = "<group>"; };
+		633BDF8F151D008900351312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		633BDF91151D008900351312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		633BDF93151D008900351312 /* ShortCo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShortCo-Prefix.pch"; sourceTree = "<group>"; };
+		633BDF95151D008900351312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		633BDF97151D008900351312 /* ShortCoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCoAppDelegate.h; sourceTree = "<group>"; };
+		633BDF98151D008900351312 /* ShortCoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoAppDelegate.m; sourceTree = "<group>"; };
+		633BDF9B151D008900351312 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		633BDFA2151D008900351312 /* ShortCoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShortCoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		633BDFA3151D008900351312 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		633BDFAA151D008900351312 /* ShortCoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShortCoTests-Info.plist"; sourceTree = "<group>"; };
+		633BDFAC151D008900351312 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		633BDFAE151D008900351312 /* ShortCoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShortCoTests.h; sourceTree = "<group>"; };
+		633BDFAF151D008900351312 /* ShortCoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		633BDF7E151D008200351312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDF86151D008200351312 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633BDF9E151D008900351312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDFA4151D008900351312 /* SenTestingKit.framework in Frameworks */,
+				633BDFA5151D008900351312 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		633BDF76151D008200351312 = {
+			isa = PBXGroup;
+			children = (
+				633BDF8B151D008200351312 /* ShortCo */,
+				633BDFA8151D008900351312 /* ShortCoTests */,
+				633BDF84151D008200351312 /* Frameworks */,
+				633BDF82151D008200351312 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		633BDF82151D008200351312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				633BDF81151D008200351312 /* ShortCo.app */,
+				633BDFA2151D008900351312 /* ShortCoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		633BDF84151D008200351312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				633BDF85151D008200351312 /* Cocoa.framework */,
+				633BDFA3151D008900351312 /* SenTestingKit.framework */,
+				633BDF87151D008200351312 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		633BDF87151D008200351312 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				633BDF88151D008200351312 /* AppKit.framework */,
+				633BDF89151D008200351312 /* CoreData.framework */,
+				633BDF8A151D008200351312 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		633BDF8B151D008200351312 /* ShortCo */ = {
+			isa = PBXGroup;
+			children = (
+				633BDF97151D008900351312 /* ShortCoAppDelegate.h */,
+				633BDF98151D008900351312 /* ShortCoAppDelegate.m */,
+				633BDF9A151D008900351312 /* MainMenu.xib */,
+				633BDF8C151D008900351312 /* Supporting Files */,
+			);
+			path = ShortCo;
+			sourceTree = "<group>";
+		};
+		633BDF8C151D008900351312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				633BDF8D151D008900351312 /* ShortCo-Info.plist */,
+				633BDF8E151D008900351312 /* InfoPlist.strings */,
+				633BDF91151D008900351312 /* main.m */,
+				633BDF93151D008900351312 /* ShortCo-Prefix.pch */,
+				633BDF94151D008900351312 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		633BDFA8151D008900351312 /* ShortCoTests */ = {
+			isa = PBXGroup;
+			children = (
+				633BDFAE151D008900351312 /* ShortCoTests.h */,
+				633BDFAF151D008900351312 /* ShortCoTests.m */,
+				633BDFA9151D008900351312 /* Supporting Files */,
+			);
+			path = ShortCoTests;
+			sourceTree = "<group>";
+		};
+		633BDFA9151D008900351312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				633BDFAA151D008900351312 /* ShortCoTests-Info.plist */,
+				633BDFAB151D008900351312 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		633BDF80151D008200351312 /* ShortCo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633BDFB3151D008900351312 /* Build configuration list for PBXNativeTarget "ShortCo" */;
+			buildPhases = (
+				633BDF7D151D008200351312 /* Sources */,
+				633BDF7E151D008200351312 /* Frameworks */,
+				633BDF7F151D008200351312 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShortCo;
+			productName = ShortCo;
+			productReference = 633BDF81151D008200351312 /* ShortCo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		633BDFA1151D008900351312 /* ShortCoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 633BDFB6151D008900351312 /* Build configuration list for PBXNativeTarget "ShortCoTests" */;
+			buildPhases = (
+				633BDF9D151D008900351312 /* Sources */,
+				633BDF9E151D008900351312 /* Frameworks */,
+				633BDF9F151D008900351312 /* Resources */,
+				633BDFA0151D008900351312 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				633BDFA7151D008900351312 /* PBXTargetDependency */,
+			);
+			name = ShortCoTests;
+			productName = ShortCoTests;
+			productReference = 633BDFA2151D008900351312 /* ShortCoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		633BDF78151D008200351312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 633BDF7B151D008200351312 /* Build configuration list for PBXProject "ShortCo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 633BDF76151D008200351312;
+			productRefGroup = 633BDF82151D008200351312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				633BDF80151D008200351312 /* ShortCo */,
+				633BDFA1151D008900351312 /* ShortCoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		633BDF7F151D008200351312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDF90151D008900351312 /* InfoPlist.strings in Resources */,
+				633BDF96151D008900351312 /* Credits.rtf in Resources */,
+				633BDF9C151D008900351312 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633BDF9F151D008900351312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDFAD151D008900351312 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		633BDFA0151D008900351312 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		633BDF7D151D008200351312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDF92151D008900351312 /* main.m in Sources */,
+				633BDF99151D008900351312 /* ShortCoAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		633BDF9D151D008900351312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				633BDFB0151D008900351312 /* ShortCoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		633BDFA7151D008900351312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 633BDF80151D008200351312 /* ShortCo */;
+			targetProxy = 633BDFA6151D008900351312 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		633BDF8E151D008900351312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633BDF8F151D008900351312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		633BDF94151D008900351312 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633BDF95151D008900351312 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		633BDF9A151D008900351312 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633BDF9B151D008900351312 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		633BDFAB151D008900351312 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				633BDFAC151D008900351312 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		633BDFB1151D008900351312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		633BDFB2151D008900351312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		633BDFB4151D008900351312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortCo/ShortCo-Prefix.pch";
+				INFOPLIST_FILE = "ShortCo/ShortCo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		633BDFB5151D008900351312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortCo/ShortCo-Prefix.pch";
+				INFOPLIST_FILE = "ShortCo/ShortCo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		633BDFB7151D008900351312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShortCo.app/Contents/MacOS/ShortCo";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortCo/ShortCo-Prefix.pch";
+				INFOPLIST_FILE = "ShortCoTests/ShortCoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		633BDFB8151D008900351312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ShortCo.app/Contents/MacOS/ShortCo";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShortCo/ShortCo-Prefix.pch";
+				INFOPLIST_FILE = "ShortCoTests/ShortCoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		633BDF7B151D008200351312 /* Build configuration list for PBXProject "ShortCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633BDFB1151D008900351312 /* Debug */,
+				633BDFB2151D008900351312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		633BDFB3151D008900351312 /* Build configuration list for PBXNativeTarget "ShortCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633BDFB4151D008900351312 /* Debug */,
+				633BDFB5151D008900351312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		633BDFB6151D008900351312 /* Build configuration list for PBXNativeTarget "ShortCoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				633BDFB7151D008900351312 /* Debug */,
+				633BDFB8151D008900351312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 633BDF78151D008200351312 /* Project object */;
+}
