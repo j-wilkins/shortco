@@ -11,5 +11,9 @@
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+- (IBAction)shortenUrl:(id)sender;
+- (IBAction)openUrl:(id)sender;
+@property (weak) IBOutlet NSTextField *originalUrlTextField;
+@property (weak) IBOutlet NSTextField *shortenedUrlTextField;
 
 @end

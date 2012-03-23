@@ -9,12 +9,22 @@
 #import "ShortCoAppDelegate.h"
 
 @implementation ShortCoAppDelegate
+@synthesize originalUrlTextField = _originalUrlTextField;
+@synthesize shortenedUrlTextField = _shortenedUrlTextField;
 
 @synthesize window = _window;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     // Insert code here to initialize your application
+}
+
+- (IBAction)shortenUrl:(id)sender 
+{
+}
+
+- (IBAction)openUrl:(id)sender 
+{
 }
 
 @end
