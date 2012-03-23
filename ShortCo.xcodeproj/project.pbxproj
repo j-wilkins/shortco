@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		132AA647151CCB2300D8E19C /* ShortCo.icns in Resources */ = {isa = PBXBuildFile; fileRef = 132AA646151CCB2300D8E19C /* ShortCo.icns */; };
 		1369D7DD151BC93600A73461 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1369D7DC151BC93600A73461 /* PreferenceController.m */; };
 		1369D7E0151BCAC000A73461 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1369D7DF151BCAC000A73461 /* AppController.m */; };
 		1369D7E2151BCD7900A73461 /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1369D7E1151BCD7900A73461 /* Preferences.xib */; };
@@ -78,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		132AA646151CCB2300D8E19C /* ShortCo.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ShortCo.icns; path = ShortCo/ShortCo.icns; sourceTree = "<group>"; };
 		1369D7DB151BC93600A73461 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
 		1369D7DC151BC93600A73461 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
 		1369D7DE151BCAC000A73461 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		63DF4276151966E5000EE40C = {
 			isa = PBXGroup;
 			children = (
+				132AA646151CCB2300D8E19C /* ShortCo.icns */,
 				63DF428B151966E5000EE40C /* ShortCo */,
 				63DF42AB151966E5000EE40C /* ShortCoTests */,
 				63DF4284151966E5000EE40C /* Frameworks */,
@@ -343,6 +346,7 @@
 				63DF4296151966E5000EE40C /* Credits.rtf in Resources */,
 				63DF429C151966E5000EE40C /* MainMenu.xib in Resources */,
 				1369D7E2151BCD7900A73461 /* Preferences.xib in Resources */,
+				132AA647151CCB2300D8E19C /* ShortCo.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
