@@ -18,6 +18,7 @@
 		633BDFAD151D008900351312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633BDFAB151D008900351312 /* InfoPlist.strings */; };
 		633BDFB0151D008900351312 /* ShortCoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDFAF151D008900351312 /* ShortCoTests.m */; };
 		633BDFC3151D04BE00351312 /* ShortFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDFC2151D04BE00351312 /* ShortFetcher.m */; };
+		633BDFC6151D07AD00351312 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDFC5151D07AD00351312 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		633BDFAF151D008900351312 /* ShortCoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShortCoTests.m; sourceTree = "<group>"; };
 		633BDFC1151D04BE00351312 /* ShortFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShortFetcher.h; sourceTree = "<group>"; };
 		633BDFC2151D04BE00351312 /* ShortFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShortFetcher.m; sourceTree = "<group>"; };
+		633BDFC5151D07AD00351312 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				633BDFC6151D07AD00351312 /* WebKit.framework in Frameworks */,
 				633BDF86151D008200351312 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,10 +81,11 @@
 		633BDF76151D008200351312 = {
 			isa = PBXGroup;
 			children = (
-				633BDF8B151D008200351312 /* ShortCo */,
-				633BDFA8151D008900351312 /* ShortCoTests */,
+				633BDFC5151D07AD00351312 /* WebKit.framework */,
 				633BDF84151D008200351312 /* Frameworks */,
 				633BDF82151D008200351312 /* Products */,
+				633BDF8B151D008200351312 /* ShortCo */,
+				633BDFA8151D008900351312 /* ShortCoTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,9 +121,9 @@
 		633BDF8B151D008200351312 /* ShortCo */ = {
 			isa = PBXGroup;
 			children = (
+				633BDF9A151D008900351312 /* MainMenu.xib */,
 				633BDF97151D008900351312 /* ShortCoAppDelegate.h */,
 				633BDF98151D008900351312 /* ShortCoAppDelegate.m */,
-				633BDF9A151D008900351312 /* MainMenu.xib */,
 				633BDFC1151D04BE00351312 /* ShortFetcher.h */,
 				633BDFC2151D04BE00351312 /* ShortFetcher.m */,
 				633BDF8C151D008900351312 /* Supporting Files */,
