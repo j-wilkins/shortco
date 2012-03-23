@@ -8,6 +8,7 @@
 
 #import "ShortFetcher.h"
 #import "SBJson/SBJson.h"
+#import "PreferenceController.h"
 
 @implementation ShortFetcher
 
@@ -22,14 +23,12 @@
         _parser = [[SBJsonParser alloc] init];
         _writer = [[SBJsonWriter alloc] init];
         
-        configuration = [[NSMutableDictionary alloc] init];
-        [configuration setObject:urlMappings forKey:@"URL_MAPPINGS"];
-        [configuration setObject:@"http://j-b.us" forKey:@"SHORTENER_URL"];
+        mappings = [[NSMutableDictionary alloc] init];
+        [mappings setObject:urlMappings forKey:@"URL_MAPPINGS"];
         
         NSLog(@"CONFIGURING:: set URL_MAPPINGS[ADD]: %@", 
-              [[configuration objectForKey:@"URL_MAPPINGS"] objectForKey:@"ADD"]);
-        NSLog(@"CONFIGURING:: set SHORTENER_URL: %@", 
-              [configuration objectForKey:@"SHORTENER_URL"]);
+              [[mappings objectForKey:@"URL_MAPPINGS"] objectForKey:@"ADD"]);
+
     }
     return self;
 }
@@ -117,8 +116,8 @@
 - (NSString *)generateURLStringForAction:(NSString *)action
 {
     NSString *actionUrl = [NSString stringWithFormat:@"%@/%@", 
-                           [configuration objectForKey:@"SHORTENER_URL"],
-        [[configuration objectForKey:@"URL_MAPPINGS"] objectForKey:action]];
+        [PreferenceController preferenceShortenerUrl],
+        [[mappings objectForKey:@"URL_MAPPINGS"] objectForKey:action]];
     
     NSLog(@"returning actionUrl %@", actionUrl);
     
@@ -128,7 +127,7 @@
 - (NSString *)generateResultURLString:(NSString *)shortened
 {
     NSString *resultString = [NSString stringWithFormat:@"%@/%@",
-                              [configuration objectForKey:@"SHORTENER_URL"], shortened];
+                    [PreferenceController preferenceShortenerUrl], shortened];
     return resultString;
 }
 

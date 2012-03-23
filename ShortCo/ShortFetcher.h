@@ -14,7 +14,7 @@
 @interface ShortFetcher : NSObject <NSXMLParserDelegate> {
     NSString *shortenedUrl;
     NSString *shortenerUrl;
-    NSMutableDictionary *configuration;
+    NSMutableDictionary *mappings;
     SBJsonParser *_parser;
     SBJsonWriter *_writer;
 }
