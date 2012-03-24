@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "ShortFetcher.h"
 
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
