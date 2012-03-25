@@ -9,9 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 #import "ShortFetcher.h"
+#import "PreferenceController.h"
 
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
     ShortFetcher *fetcher;
+    PreferenceController *preferenceController;
 }
 
 @property (assign) IBOutlet NSWindow *window;
@@ -20,5 +22,6 @@
 
 - (IBAction)shortenUrl:(id)sender;
 - (IBAction)openUrl:(id)sender;
+- (IBAction)showPreferencePanel:(id)sender;
 
 @end

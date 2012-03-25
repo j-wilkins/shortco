@@ -10,6 +10,7 @@
 		13B43ABE151D1D8F003B61F7 /* SBJson.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1357A82C151D187B00A5A38F /* SBJson.framework */; };
 		13B43ABF151D1D98003B61F7 /* SBJson.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1357A82C151D187B00A5A38F /* SBJson.framework */; };
 		13B43AC7151D7B0E003B61F7 /* PreferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B43AC6151D7B0E003B61F7 /* PreferenceController.m */; };
+		13B43AC9151D808C003B61F7 /* Preference.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B43AC8151D808C003B61F7 /* Preference.xib */; };
 		633BDF86151D008200351312 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 633BDF85151D008200351312 /* Cocoa.framework */; };
 		633BDF90151D008900351312 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 633BDF8E151D008900351312 /* InfoPlist.strings */; };
 		633BDF92151D008900351312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 633BDF91151D008900351312 /* main.m */; };
@@ -78,6 +79,7 @@
 /* Begin PBXFileReference section */
 		13B43AC5151D7B0E003B61F7 /* PreferenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferenceController.h; sourceTree = "<group>"; };
 		13B43AC6151D7B0E003B61F7 /* PreferenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferenceController.m; sourceTree = "<group>"; };
+		13B43AC8151D808C003B61F7 /* Preference.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preference.xib; sourceTree = "<group>"; };
 		633BDF81151D008200351312 /* ShortCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShortCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633BDF85151D008200351312 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		633BDF88151D008200351312 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -185,6 +187,7 @@
 				633BDF97151D008900351312 /* ShortCoAppDelegate.h */,
 				633BDF98151D008900351312 /* ShortCoAppDelegate.m */,
 				633BDFC1151D04BE00351312 /* ShortFetcher.h */,
+				13B43AC8151D808C003B61F7 /* Preference.xib */,
 				633BDFC2151D04BE00351312 /* ShortFetcher.m */,
 				13B43AC5151D7B0E003B61F7 /* PreferenceController.h */,
 				13B43AC6151D7B0E003B61F7 /* PreferenceController.m */,
@@ -335,6 +338,7 @@
 				633BDF90151D008900351312 /* InfoPlist.strings in Resources */,
 				633BDF96151D008900351312 /* Credits.rtf in Resources */,
 				633BDF9C151D008900351312 /* MainMenu.xib in Resources */,
+				13B43AC9151D808C003B61F7 /* Preference.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
