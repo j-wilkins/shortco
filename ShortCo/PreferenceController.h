@@ -14,9 +14,10 @@ extern NSString * const GNRShortenerUrlKey;
 
 @interface PreferenceController : NSWindowController
 {
-    IBOutlet NSButton *openWithSafariCheckbox;
-    IBOutlet NSButton *keepPreviewCheckbox;
+    //IBOutlet NSButton *openWithSafariCheckbox;
+    //IBOutlet NSButton *keepPreviewCheckbox;
     //IBOutlet NSTextField *setShortenerUrlField;
+    BOOL openWithSafariIsChecked;
 }
 
 + (BOOL)preferenceOpenSafari;
@@ -32,6 +33,8 @@ extern NSString * const GNRShortenerUrlKey;
 
 //@property (assign) IBOutlet NSTextField *setShortenerUrlField;
 @property (weak) IBOutlet NSTextField *setShortenerUrlTextField;
+@property (weak) IBOutlet NSButton *openWithSafariCheckbox;
+@property (weak) IBOutlet NSButton *keepPreviewCheckbox;
 
 
 @end
