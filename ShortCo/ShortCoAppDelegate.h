@@ -9,10 +9,12 @@
 #import <Cocoa/Cocoa.h>
 
 #import "ShortFetcher.h"
+#import "PreferenceController.h"
 @class BrowserController;
 
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
     ShortFetcher *fetcher;
+    PreferenceController *preferenceController;
     BrowserController *browserController;
 }
 

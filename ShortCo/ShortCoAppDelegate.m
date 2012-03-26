@@ -63,4 +63,13 @@
     [browserController showWindow:self];
 }
 
+- (IBAction)showPreferencePanel:(id)sender
+{
+    if (!preferenceController) {
+        preferenceController = [[PreferenceController alloc] init];
+    }
+    NSLog(@"showing %@", preferenceController);
+    [preferenceController showWindow:self];
+}
+
 @end
