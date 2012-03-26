@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+
 #import "ShortFetcher.h"
 @class BrowserController;
 
@@ -21,5 +22,6 @@
 
 - (IBAction)shortenUrl:(id)sender;
 - (IBAction)openUrl:(id)sender;
+- (IBAction)showPreferencePanel:(id)sender;
 
 @end
