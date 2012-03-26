@@ -8,9 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "ShortFetcher.h"
+@class BrowserController;
 
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {
     ShortFetcher *fetcher;
+    BrowserController *browserController;
 }
 
 @property (assign) IBOutlet NSWindow *window;

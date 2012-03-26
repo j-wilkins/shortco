@@ -7,6 +7,7 @@
 //
 
 #import "ShortCoAppDelegate.h"
+#import "BrowserController.h"
 
 @implementation ShortCoAppDelegate
 @synthesize originalUrlTextField = _originalUrlTextField;
@@ -25,6 +26,11 @@
 
 - (IBAction)openUrl:(id)sender 
 {
+    if (!browserController) {
+        browserController = [[BrowserController alloc] init];
+    }
+    NSLog(@"showing %@", browserController);
+    [browserController showWindow:self];
 }
 
 @end
