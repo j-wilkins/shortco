@@ -27,6 +27,8 @@
     //    [defaultValues setObject:YES forKey:BNRTableBgColorKey]; 
     [defaultValues setObject:[NSNumber numberWithBool:YES] 
                       forKey:GNROpenWithSafariKey];
+    [defaultValues setObject:[NSNumber numberWithBool:NO]
+                      forKey:GNRKeepPreviewOpen];
     
     [defaultValues setObject:@"http://shortener1.heroku.com" 
                       forKey:GNRShortenerUrlKey];
@@ -66,6 +68,7 @@
 - (IBAction)showPreferencePanel:(id)sender
 {
     if (!preferenceController) {
+        NSLog(@"createing new preference controller");
         preferenceController = [[PreferenceController alloc] init];
     }
     NSLog(@"showing %@", preferenceController);

@@ -15,6 +15,8 @@ NSString * const GNRShortenerUrlKey = @"GNRShortenerUrl";
 @implementation PreferenceController
 
 @synthesize setShortenerUrlTextField;
+@synthesize openWithSafariCheckbox;
+@synthesize keepPreviewCheckbox;
 
 + (BOOL)preferenceOpenSafari;
 {
@@ -24,6 +26,7 @@ NSString * const GNRShortenerUrlKey = @"GNRShortenerUrl";
 
 + (void)setPreferenceOpenSafari:(BOOL)openSafari
 {
+    NSLog(@"setting preference open with safari %d", openSafari);
     [[NSUserDefaults standardUserDefaults]
      setBool:openSafari forKey:GNROpenWithSafariKey];
 }
@@ -36,6 +39,7 @@ NSString * const GNRShortenerUrlKey = @"GNRShortenerUrl";
 
 + (void)setPreferenceKeepPreviewOpen:(BOOL)keepOpen
 {
+    NSLog(@"setting preference keepopen %d", keepOpen);
     [[NSUserDefaults standardUserDefaults]
      setBool:keepOpen forKey:GNRKeepPreviewOpen];
 }
@@ -71,16 +75,33 @@ NSString * const GNRShortenerUrlKey = @"GNRShortenerUrl";
 {
     [super windowDidLoad];
     
-    // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+    NSLog(@"setting openWithSafariCheckbox %d",
+          [PreferenceController preferenceOpenSafari]);
+    NSLog(@"setting keepPreviewCheckbox %d",
+          [PreferenceController preferenceKeepPreviewOpen]);
+    
+    [openWithSafariCheckbox setState: 
+      [PreferenceController preferenceOpenSafari]];
+    [keepPreviewCheckbox setState: 
+     [PreferenceController preferenceKeepPreviewOpen]];
+    
+    [setShortenerUrlTextField setStringValue: 
+      [PreferenceController preferenceShortenerUrl]];
+    [self willChangeValueForKey:@"openWithSafariIsChecked"];
+    openWithSafariIsChecked = [PreferenceController preferenceOpenSafari];
+    [self didChangeValueForKey:@"openWithSafariIsChecked"];
 }
 
 -(IBAction)changeOpenWithSafari:(id)sender
 {
+    NSLog(@"open with sf cb = %@", openWithSafariCheckbox);
     NSInteger state = [openWithSafariCheckbox state];
     
     [PreferenceController setPreferenceOpenSafari:state];
-    
-    NSLog(@"Checkbox changed %ld", state);
+    [self willChangeValueForKey:@"openWithSafariIsChecked"];
+    openWithSafariIsChecked = [PreferenceController preferenceOpenSafari];
+    [self didChangeValueForKey:@"openWithSafariIsChecked"];
+    NSLog(@"Checkbox changeOpenWithSafari %ld", state);
 }
 
 - (IBAction)changeKeepPreviewOpen:(id)sender 
@@ -88,13 +109,15 @@ NSString * const GNRShortenerUrlKey = @"GNRShortenerUrl";
     NSInteger state = [keepPreviewCheckbox state];
     
     [PreferenceController setPreferenceKeepPreviewOpen:state];
+
     
-    NSLog(@"Checkbox changed %ld", state);
+    NSLog(@"Checkbox changeKeepPreviewOpen %ld", state);
 }
 
 - (IBAction)updateShortenerUrl:(id)sender 
 {
     NSString *url = [setShortenerUrlTextField stringValue];
+    NSLog(@"setting shortenerUrl to %@", url);
     [PreferenceController setPreferenceShortenerUrl:url];
 }
 @end

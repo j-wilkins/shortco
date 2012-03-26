@@ -29,7 +29,7 @@
         [_urlMappings setObject:urlMappings forKey:@"URL_MAPPINGS"];
         
         NSLog(@"CONFIGURING:: set URL_MAPPINGS[ADD]: %@", 
-              [[urlMappings objectForKey:@"URL_MAPPINGS"] objectForKey:@"ADD"]);
+              [urlMappings objectForKey:@"ADD"]);
         
     }
     return self;
@@ -123,7 +123,7 @@
 - (NSString *)generateUrlStringForAction:(NSString *)action
 {
     NSString *actionUrl = [NSString stringWithFormat:@"%@/%@", 
-                           // [PreferenceController preferenceShortenerUrl],
+                           [PreferenceController preferenceShortenerUrl],
         [[_urlMappings objectForKey:@"URL_MAPPINGS"] objectForKey:action]];
     
     NSLog(@"returning actionUrl %@", actionUrl);
