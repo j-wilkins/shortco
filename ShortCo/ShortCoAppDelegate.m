@@ -5,7 +5,7 @@
 //  Created by Chad Gulley on 3/23/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
-
+#import "WebKit/WebKit.h"
 #import "ShortCoAppDelegate.h"
 #import "BrowserController.h"
 
@@ -58,17 +58,23 @@
 
 - (IBAction)openUrl:(id)sender 
 {
-    if (!browserController) {
-        browserController = [[BrowserController alloc] init];
+    if ([PreferenceController preferenceOpenSafari]) {
+        NSURL *url = [NSURL URLWithString:[_shortenedUrlTextField stringValue]];
+        [[NSWorkspace sharedWorkspace] openURL:url];
     }
-    NSLog(@"showing %@", browserController);
-    [browserController showWindow:self];
+    else {
+        if (!browserController) {
+            browserController = [[BrowserController alloc] init];
+        }
+        [browserController showWindow:self];
+        [browserController openWebPageInPanel:[_shortenedUrlTextField stringValue]];
+    }
 }
 
 - (IBAction)showPreferencePanel:(id)sender
 {
     if (!preferenceController) {
-        NSLog(@"createing new preference controller");
+        NSLog(@"creating new preference controller");
         preferenceController = [[PreferenceController alloc] init];
     }
     NSLog(@"showing %@", preferenceController);

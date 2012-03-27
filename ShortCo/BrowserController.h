@@ -7,7 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "WebKit/WebKit.h"
 
-@interface BrowserController : NSWindowController
+
+@interface BrowserController : NSWindowController {
+//    WebView *webView;
+}
+
+@property (weak) IBOutlet WebView *webView;
+
+- (void)openWebPageInPanel:(NSString *)url;
 
 @end

@@ -10,6 +10,8 @@
 
 #import "ShortFetcher.h"
 #import "PreferenceController.h"
+#import "BrowserController.h"
+
 @class BrowserController;
 
 @interface ShortCoAppDelegate : NSObject <NSApplicationDelegate> {

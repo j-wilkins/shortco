@@ -9,6 +9,7 @@
 #import "BrowserController.h"
 
 @implementation BrowserController
+@synthesize webView;
 
 - (id)init {
     self = [super initWithWindowNibName:@"Browser"];
@@ -28,6 +29,11 @@
 - (void)windowDidLoad
 {
     [super windowDidLoad];
+}
+
+- (void)openWebPageInPanel:(NSString *)url
+{
+    [webView setMainFrameURL:url];
 }
 
 @end
