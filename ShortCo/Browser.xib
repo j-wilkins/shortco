@@ -84,7 +84,7 @@
 									<string>public.url-name</string>
 								</object>
 							</object>
-							<string key="NSFrame">{{20, 20}, {627, 386}}</string>
+							<string key="NSFrameSize">{673, 431}</string>
 							<reference key="NSSuperview" ref="614081475"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
